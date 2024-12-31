@@ -25,7 +25,9 @@ def main():
         return
       
     screen.fill("black")
+
     player.draw(screen)
+    player.update(dt)
     pygame.display.flip()
 
     delta = time_clock.tick(60)
